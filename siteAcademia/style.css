@@ -1,0 +1,158 @@
+/* Definições gerais */
+body {
+  background-color: #1d1d1d;
+  color: #fdfdfd;
+  font-family:Georgia, 'Times New Roman', Times, serif , sans-serif;
+  margin: 5px;
+  padding: 4;
+  text-align: left; /* Centraliza o conteúdo */
+}
+
+/* Estilos dos cabeçalhos */
+h1, h2 {
+  border-bottom: 3px solid #f56f3d;
+  font-size: 45px ;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 50px ;
+}
+
+/* Estilos das listas */
+ul {
+  list-style: none;
+  margin: 30px;
+  padding: 0;
+  text-align: center;
+
+}
+
+/* Estilos dos itens da lista */
+.box {
+  margin-block-end: 25px;
+  border: 2px solid #f56f3d; /* Muda a borda do item */
+  border-top: 85px solid #f56f3d;
+  border-right: auto;
+  padding: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.box:before {
+  content: attr(data-text);
+  position: absolute;
+  text-transform: uppercase;
+  top: -70px;
+  left: 15%;
+  right: 17%;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* Estilos das imagens */
+img {
+  display: inline-flex;
+  width: 350px;
+  height:450px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: auto;
+  position:relative;
+}
+
+.btn {
+  background-color: #f56f3d;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  width: auto;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom:100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-right:50px;
+  margin-block-end: 10px;
+  position:relative;
+}
+
+/* Estilo do botão ao passar o mouse */
+.btn:hover {
+  background-color: #fff;
+  color: #f56f3d;
+  transition: background-color 0.5s, color 0.5s;
+  text-decoration:underline;
+}
+.btn:active{
+  color: #000;
+}
+@media only screen and (max-width: 767px) {
+  /* Centraliza o conteúdo */
+  body {
+    text-align: center;
+  }
+  
+  /* Reduz o tamanho dos cabeçalhos */
+  h1, h2 {
+    font-size: 24px;
+  }
+  
+  /* Aumenta o espaçamento entre os itens da lista */
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Aumenta o tamanho do botão */
+  .btn {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para telas médias */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Centraliza o conteúdo */
+  body {
+    text-align: center;
+  }
+  
+  /* Reduz o tamanho dos cabeçalhos */
+  h1, h2 {
+    font-size: 36px;
+  }
+  
+  /* Reduz o espaçamento entre os itens da lista */
+  li {
+    margin-bottom: 15px;
+  }
+  
+  /* Aumenta o tamanho do botão */
+  .btn {
+    font-size: 14px;
+  }
+}
+ 
+
+/* Estilos para telas de até 400px */
+@media only screen and (max-width: 414px) {
+  /* Centraliza as imagens */
+  img {
+    margin: 0 auto 10px;
+  }
+  .box{
+    border-top: 100px;
+  }
+  .btn {
+    font-size: small;
+    margin: 10px;
+    margin-bottom: 100px;
+    display: inline-block;  
+    width: 10px;
+
+  }
+
+}
+
