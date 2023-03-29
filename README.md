@@ -2,4 +2,4 @@
 
 Repositório para um site que contem exercícios a serem realizados na academia 
 
-site: https://treino-academia-ianzinho.netlify.app
+site: https://exercicios-academia-ianzinho.netlify.app
